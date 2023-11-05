@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        function outputWeather(temperature,name){
-            if (temperature<15) {
-                alert(`It is cold day, ${name}`);
-            } else {
-                alert(`It is a warm day, ${name}`);
-            }
+      function outputWeather(temperature, name) {
+        if (temperature < 15) {
+          alert(`It is cold day, ${name}`);
+        } else {
+          alert(`It is a warm day, ${name}`);
         }
-        outputWeather(20,"Nyabinda");
-        outputWeather("10","Lexy");
+      }
+      outputWeather(20, "Nyabinda");
+      outputWeather("10", "Lexy");
+      function isWindy(speed) {
+        if (speed > 5) {
+          alert("It is windy");
+        } else {
+          alert("It is not windy");
+        }
+      }
+      isWindy(7);
+      isWindy(2);
     </script>
-</body>
+  </body>
 </html>
